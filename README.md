@@ -1,4 +1,5 @@
-# c_22_commandLineArgument
+c_22_commandLineArgument
+========================
 
 ## DESCRIPTION
 
@@ -46,7 +47,6 @@ To install the cs50 library follow the steps:
 4. Copy the `libcs50.a` file into your compiler's `lib` directory
 
 5. Copy the `cs50.h` file into your compiler's `include` directory
-
 
 ## COMPILE AND RUN THE CODE
 
