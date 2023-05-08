@@ -1,26 +1,22 @@
-# c_21_uppercase
+# c_22_commandLineArgument
 
 ## DESCRIPTION
 
-The program takes a string from the user, then changes the lowercase letters to uppercase.
-Uppercase letters in the user string will remain uppercase.
+The program takes a command line argument as a user's name, then greets the user.
 
-## ALGORITHM
+In code below we declared the main function to **not** have any arguments (**void**) and have a return value which type is integer.
+```
+int main(void)
+```
 
-To change the lowercase letters to uppercase we have to look at the ASCII table. 
-There is a pattern we recognize between upper and lowercase letters, let's see two examples:
+But we can declare the main function to have command line arguments:
+```
+int main(int argc, string argv[])
+```
 
-| Lowercase Letter 	| ASCII code (DEC)	| Uppercase Letter	| ASCII code (DEC)	|
-|-------------------|-------------------|-------------------|-------------------|
-| a 			   	| 97				| A					| 65				|
-| c					| 99				| C					| 67				|
+**argc** is the argument count, it needed to know how much characters there are in the *argv* string
 
-### v1.0  
-There is always __32__ between the lowercase and uppercase letters.
-We can iterate through the letters of a string in loop and check each character in the string. If the character is between 'a' and 'z' then we have to subtract 32 from the character's decimal value, this way we change it to uppercase. 
-
-### v2.0  
-The best way is using a library where this process is already implemented. This library is `ctype.h`.
+**argv[]** is a string which will contain all the characters we type into the prompt
 
 
 ## INSTALL LIBRARIES
@@ -49,8 +45,8 @@ The code is written in C, the compiler used to generate the exe is: `gcc Rev10, 
 
 Run the below code in terminal (git bash) to compile the source:
 
-> gcc uppercase.c -lcs50 -o ./build/uppercase
+> gcc commandLineArgument.c -lcs50 -o ./build/commandLineArgument
 
 To run the executable run the below code in terminal (git bash):
 
-> ./build/uppercase.exe
+> ./build/commandLineArgument.exe
