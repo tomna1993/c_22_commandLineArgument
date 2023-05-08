@@ -14,7 +14,7 @@ But we can declare the main function to have command line arguments:
 
 **argv[]** is a string array which will contain all the words we type into the prompt.
 
-**argv[0]** is always the first word in the command prompt. If we like to run the program as the following:
+**argv[0]** is always the first word in the command prompt. The words are separated by a space " " character. If we like to run the program as the following:
 
 > ./build/commandLineArgument.exe TheUserInput
 
