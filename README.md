@@ -5,19 +5,28 @@
 The program takes a command line argument as a user's name, then greets the user.
 
 In code below we declared the main function to **not** have any arguments (**void**) and have a return value which type is integer.
-```
-int main(void)
-```
+> int main(void)
 
 But we can declare the main function to have command line arguments:
-```
-int main(int argc, string argv[])
-```
+> int main(int argc, string argv[])
 
 **argc** is the argument count, it needed to know how much characters there are in the *argv* string
 
 **argv[]** is a string which will contain all the characters we type into the prompt
 
+argv[0] is always the first word in the command prompt. If we like to run the program as the following:
+
+> ./build/commandLineArgument.exe TheUserInput
+
+then the 
+
+> argv[0] = "./build/commandLineArgument.exe"
+
+> argv[1] = "TheUserInput"
+
+> argv[2] = "(null)"
+
+The **argc** in the above case would be equal to **2** because there are two words in the string array.
 
 ## INSTALL LIBRARIES
 
