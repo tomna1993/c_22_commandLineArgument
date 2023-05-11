@@ -1,5 +1,4 @@
-c_22_commandLineArgument
-========================
+# c_22_commandLineArgument
 
 ## DESCRIPTION
 
@@ -21,11 +20,11 @@ But we can declare the main function to have command line arguments:
 
 then
 
-> argv[0] = "./build/commandLineArgument.exe"
-
-> argv[1] = "TheUserInput"
-
-> argv[2] = "(null)"
+```bash
+argv[0] = "./build/commandLineArgument.exe"
+argv[1] = "TheUserInput"
+argv[2] = "(null)"
+```
 
 The **argc** in the above case would be equal to **2** because there are two words in the string array exluded the null at the end of the array.
 
@@ -35,14 +34,14 @@ The source code uses the cs50 library what you can download [HERE](https://githu
 
 To install the cs50 library follow the steps:
 
-1. Open git bash terminal and change the current working directory to `src`:   
-  	> cd ./libsc50/src
+1. Open git bash terminal and change the current working directory to `src`:  
+   > cd ./libsc50/src
 
 2. Compile the cs50.c source into .o with:
-	> gcc -c cs50.c -o cs50.o
+   > gcc -c cs50.c -o cs50.o
 
 3. Make the library archive:  
-  	> ar rcs libcs50.a cs50.o
+   > ar rcs libcs50.a cs50.o
 
 4. Copy the `libcs50.a` file into your compiler's `lib` directory
 
